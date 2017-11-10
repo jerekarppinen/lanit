@@ -18,7 +18,7 @@ services:
      image: wordpress:latest
      volumes:
       #  mount the wordpress install into container
-      - ./wordpress:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
      ports:
        - "8000:80"
      restart: always
